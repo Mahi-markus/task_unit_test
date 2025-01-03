@@ -50,14 +50,14 @@ def test_lending_book_failure(library):
     assert library.books["The Last Battle"] == "Test Student"
 
 
-def test_return_book(library):
+def test_returning_book(library):
     
     library.lend_book("The Last Battle", "Test Student")
     library.return_book("The Last Battle")
     assert library.books["The Last Battle"] == "Free"
 
 
-def test_return_borrowed_book(library, capsys):
+def test_return_borrowedbook(library, capsys):
     
     library.return_book("The Last Battle")
     captured = capsys.readouterr()
@@ -85,7 +85,7 @@ def test_student_return_book_success(student, library):
 
 
 
-def test_student_view_borrowed_empty(student, capsys):
+def test_student_emptyborrowed(student, capsys):
     
     student.view_borrowed()
     captured = capsys.readouterr()
