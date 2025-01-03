@@ -6,9 +6,10 @@ pip install -U pytest
 
 
 pytest
+coverage
 
 
-coverage run -m pytest test_library2.py test_library3.py
+coverage run -m pytest test_library.py 
 coverage report -m
 
 
