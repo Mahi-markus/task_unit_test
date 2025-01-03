@@ -26,7 +26,7 @@ def test_show_available_books(library, capsys):
 
 
 
-def test_show_available_books_no_books(library, capsys):
+def test_no_books_shown(library, capsys):
     for book in library.books:
         library.books[book] = "Borrowed"
     library.show_avail_books()
@@ -57,7 +57,7 @@ def test_return_book(library):
     assert library.books["The Last Battle"] == "Free"
 
 
-def test_return_book_not_borrowed(library, capsys):
+def test_return_borrowed_book(library, capsys):
     
     library.return_book("The Last Battle")
     captured = capsys.readouterr()
