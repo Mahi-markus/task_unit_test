@@ -1,0 +1,15 @@
+python3 -m venv venv        #On macOS/Linux:
+source venv/bin/activate
+
+
+pip install -U pytest
+
+
+pytest
+
+
+coverage run -m pytest test_library2.py test_library3.py
+coverage report -m
+
+
+https://hackr.io/blog/python-projects
