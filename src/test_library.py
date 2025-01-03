@@ -92,7 +92,7 @@ def test_student_emptyborrowed(student, capsys):
     assert "You haven't borrowed any books" in captured.out
 
 
-def test_student_view_borrowed_with_books(student, capsys):
+def test_student_view_borrowed(student, capsys):
     
     student.books.append("The Last Battle")
     student.books.append("The Hunger Games")
