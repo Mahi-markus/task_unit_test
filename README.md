@@ -11,6 +11,7 @@
 
 ```bash
 git clone https://github.com/Mahi-markus/task_unit_test.git
+cd task_unit_test
 
 ```
 
@@ -33,3 +34,8 @@ pytest
 coverage run -m pytest test_library.py 
 coverage report -m
 ```
+
+
+## slide link given below ##
+
+- [slide link](https://docs.google.com/presentation/d/16h0uMGOZwwB2PBIQCd3XaqTAkpEGrTk450pBY0XVt7E/edit?usp=sharing)
